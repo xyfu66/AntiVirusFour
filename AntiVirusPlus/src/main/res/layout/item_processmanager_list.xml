@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgv_appicon_processmana"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/broom_animation" />
+
+    <TextView
+        android:id="@+id/tv_appname_processmana"
+        style=" @style/textview16sp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imgv_appicon_processmana"
+        android:layout_margin="5dp"
+        android:text="appname_processmana"
+        android:textColor="@color/purpleDark"/>
+
+    <TextView
+        android:id="@+id/tv_appmemory_processmana"
+        style="@style/textview14sp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/tv_appname_processmana"
+        android:layout_toRightOf ="@id/imgv_appicon_processmana"
+        android:text="appmemory_processmana"
+        android:textColor="@color/lightBlue"
+        />
+    <CheckBox
+        android:id="@+id/checkbox"
+        style="style/wrapcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/green_checkbox_selector"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

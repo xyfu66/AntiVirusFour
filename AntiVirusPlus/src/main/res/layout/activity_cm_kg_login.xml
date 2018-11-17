@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#8080c0">
+
+    <include layout="@layout/titlebar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dip"
+            android:includeFontPadding="false"
+            android:maxHeight="16sp"
+            android:text="性别"
+            android:textColor="#222222"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/btn_register_info_sex"
+            android:layout_width="170dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="11dip"
+            android:background="@drawable/user_sex_selector"
+            android:button="@null"
+            android:gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="23dip"
+            android:layout_marginTop="25dip"
+            android:background="@drawable/line"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:maxHeight="17sp"
+            android:text="身高(cm)"
+            android:textColor="#222222"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_register_info_height_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dip"
+            android:includeFontPadding="false"
+            android:maxHeight="24sp"
+            android:text="165"
+            android:textColor="#222222"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.jinyun.antivirusfour.health.RulerView
+                android:id="@+id/ruler_height"
+                android:layout_width="match_parent"
+                android:layout_height="58dip"
+                android:layout_marginTop="24dip"
+                app:alphaEnable="true"
+                app:lineColor="@color/gray"
+                app:lineMaxHeight="40dp"
+                app:lineMidHeight="30dp"
+                app:lineMinHeight="20dp"
+                app:lineSpaceWidth="10dp"
+                app:lineWidth="2dip"
+                app:textColor="@color/black"
+                app:minValue="80"
+                app:maxValue="250"
+                app:perValue="1"
+                app:selectorValue="165"
+                />
+
+            <ImageView
+                android:layout_width="14dip"
+                android:layout_height="46dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/height"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="23dip"
+            android:layout_marginTop="27dip"
+            android:background="@drawable/line"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:maxHeight="17sp"
+            android:text="体重(kg)"
+            android:textColor="#222222"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_register_info_weight_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dip"
+            android:includeFontPadding="false"
+            android:maxHeight="24sp"
+            android:text="55"
+            android:textColor="#222222"
+            android:textSize="24sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+            <com.jinyun.antivirusfour.health.RulerView
+                android:id="@+id/ruler_weight"
+                android:layout_width="match_parent"
+                android:layout_height="58dip"
+                android:layout_marginTop="24dip"
+                app:alphaEnable="true"
+                app:lineColor="@color/gray"
+                app:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="14dip"
+                android:layout_height="46dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/weight"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_health_login"
+                android:layout_width="170sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:text="我要减重"
+                android:textSize="30sp"
+                android:background="@drawable/text_bg"/>
+
+            <View
+                android:layout_width="10dip"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btn_health_no_login"
+                android:layout_width="170sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:text="保持身材"
+                android:textSize="30sp"
+                android:background="@drawable/text_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

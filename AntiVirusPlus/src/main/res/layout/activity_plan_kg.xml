@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jinyun.antivirusfour.health.ruler.RulerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/titlebar"/>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_dark" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/targetkg" />
+
+            <TextView
+                android:id="@+id/tv_plan_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计划完成需要：10周"
+                android:textColor="@color/lightText"
+                android:textSize="24sp"
+                android:layout_gravity="bottom|center_horizontal" />
+
+        </FrameLayout>
+
+        <com.keyboard3.RulerNumberLayout
+            android:id="@+id/rnl_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:kgTextSize="20sp"
+            app:kgUnitText="kg"
+            app:scaleTextSize="40sp" />
+
+        <com.keyboard3.BooheeRuler
+            android:id="@+id/br_plan"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            app:bigScaleLength="40dp"
+            app:bigScaleWidth="2.5dp"
+            app:count="10"
+            app:currentScale="666666"
+            app:cursorDrawable="@drawable/cursor_shape"
+            app:cursorHeight="45dp"
+            app:cursorWidth="4dp"
+            app:maxScale="102"
+            app:minScale="01"
+            app:numberTextSize="22sp"
+            app:paddingStartAndEnd="10dp"
+            app:rulerStyle="top"
+            app:scaleInterval="11.5dp"
+            app:smallScaleLength="20dp"
+            app:smallScaleWidth="1.5dp"
+            app:targetRulerNumber="@id/rnl_plan"
+            app:textMarginHead="70dp" />
+        <Button
+            android:id="@+id/btn_plan_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:background="@drawable/shape"
+            android:textColor="@color/lightBlue"
+            android:layout_marginBottom="4dip"/>
+
+
+    </LinearLayout>
+</com.jinyun.antivirusfour.health.ruler.RulerLayout>

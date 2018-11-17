@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/textview16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="安全号码"
+            android:textColor="@color/purple" />
+
+        <TextView
+            android:id="@+id/tv_safephone"
+            style="@style/textview16sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/purple" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="#10000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tv_lostfind_protectstauts"
+            style="@style/textview16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="防盗保护是否开启"
+            android:textColor="@color/purple" />
+
+        <ToggleButton
+            android:id="@+id/togglebtn_lostfind"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/toggle_btn_bg_selector"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="#10000000" />
+
+    <RelativeLayout
+        android:id="@+id/rl_inter_setup_wizard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/textview16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="重新进入设置向导"
+            android:textColor="@color/purple" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="#10000000" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/round_purple_tv_bg"
+            android:gravity="center"
+            android:text="短信指令功能简介"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                style="@style/textview16sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="#*alarm*#"
+                android:textColor="@color/purple" />
+
+            <TextView
+                style="@style/textview16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/sim_alarm_icon_small"
+                android:drawablePadding="5dp"
+                android:text="播放报警音乐"
+                android:textColor="@color/purple" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                style="@style/textview16sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="#*location*#"
+                android:textColor="@color/purple" />
+
+            <TextView
+                style="@style/textview16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/location_icon_small"
+                android:drawablePadding="5dp"
+                android:text="GPS追踪"
+                android:textColor="@color/purple" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                style="@style/textview16sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="#*lockScreen*#"
+                android:textColor="@color/purple" />
+
+            <TextView
+                style="@style/textview16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/lock_screen_icon_small"
+                android:drawablePadding="5dp"
+                android:text="远程锁屏"
+                android:textColor="@color/purple" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                style="@style/textview16sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="#*wipedata*#"
+                android:textColor="@color/purple" />
+
+            <TextView
+                style="@style/textview16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/delete_data_small"
+                android:drawablePadding="5dp"
+                android:text="远程删除数据"
+                android:textColor="@color/purple" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

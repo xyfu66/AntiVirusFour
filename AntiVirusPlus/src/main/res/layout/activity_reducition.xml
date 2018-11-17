@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itcast="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg02"
+	android:orientation="vertical" >
+	<include layout="@layout/titlebar"/>
+	<LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center" >
+		<com.jinyun.antivirusfour.advanced.widget.MyCircleProgress
+		    android:id="@+id/mcp_reducition"
+			android:layout_width="150dp"
+			android:layout_height="150dp"
+			android:layout_gravity="center"
+			android:background="@drawable/shape"
+			android:gravity="center"
+			android:text="一键还原"
+			android:textColor="@color/lightText"
+			itcast:circleColor="@color/purple"
+			itcast:progressColor="@color/colorPrimaryDark"/>
+	</LinearLayout>
+</LinearLayout>	

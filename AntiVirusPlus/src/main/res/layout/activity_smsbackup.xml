@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itcast="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/bg03">
+	<include layout="@layout/titlebar"/>
+	<LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center">
+	<com.jinyun.antivirusfour.advanced.widget.MyCircleProgress
+	    android:id="@+id/mcp_smsbackup"
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:text="一键备份"
+		android:background="@drawable/shape"
+		android:textColor="@color/white"
+		itcast:circleColor="@color/lightText"
+		itcast:progressColor="@color/purple"
+		/>
+	</LinearLayout>
+</LinearLayout>
+	

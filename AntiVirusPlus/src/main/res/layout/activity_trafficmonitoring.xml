@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/titlebar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/imgv_traffic_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/traffic_reminer_selector"/>
+            <TextView
+                android:id="@+id/tv_traffic_remind"
+                style="@style/textview16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgv_traffic_remind"
+                android:gravity="center"
+                android:textColor="@color/lightText"
+                android:textSize="30dp"
+                android:text="本月流量充足" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_today_gprs"
+                style="@style/textview16sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/lightText"
+                android:textSize="25dp"
+                android:text="今天已用: " />
+
+            <TextView
+                android:id="@+id/tv_month_usedgprs"
+                style="@style/textview16sp"
+                android:textSize="25dp"
+                android:textColor="@color/lightText"
+                android:layout_margin="5dp"
+                android:text="本月已用: " />
+
+            <TextView
+                android:id="@+id/tv_month_totalgprs"
+                style="@style/textview16sp"
+                android:textSize="25dp"
+                android:textColor="@color/lightText"
+                android:layout_margin="5dp"
+                android:text="本月流量" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_correction_flow"
+        android:layout_width="280dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="4"
+        android:background="@drawable/add_btn_selector_securityphone"
+        android:text="矫正流量(短信矫正)"
+        android:textColor="@color/white"/>
+</LinearLayout>  

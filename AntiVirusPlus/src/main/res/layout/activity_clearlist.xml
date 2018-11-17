@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorBroom">
+
+        <ImageView
+            android:id="@+id/imgv_broom"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:repeatMode="restart"
+            android:repeatCount="infinite"
+            android:background="@drawable/broom_animation"
+            android:contentDescription="扫描的动画" />
+
+        <TextView
+            android:id="@+id/tv_recommend_clean"
+            style="@style/textview12sp"
+            android:layout_width="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:maxLength="26"
+            android:singleLine="true"
+            android:text="recommend_clean"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_can_clean"
+            style="@style/textview12sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:maxLength="20"
+            android:text="can_clean"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_scancache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_cleanall"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/clr_pressed"
+            android:enabled="false"
+            android:text="扫描完成，立即清理"
+            android:textSize="23sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/menu_research"
+          android:orderInCategory="100"
+          android:title="重新搜索"/>
+
+    <item
+        android:id="@+id/menu_selectall"
+        android:orderInCategory="100"
+        android:title="全选"/>
+    <item
+        android:id="@+id/menu_disselect"
+        android:orderInCategory="100"
+        android:title="取消选择"/>
+    <item android:id="@+id/menu_delete"
+          android:title="刪除"
+          android:orderInCategory="100"/>
+    <item android:id="@+id/menu_about"
+          android:title="关于"
+          android:orderInCategory="100"/>
+</menu>

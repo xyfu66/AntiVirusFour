@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.zxing.client.android"
+    android:versionCode="1"
+    android:versionName="1.1"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:overrideLibrary = "com.google.zxing.client.android">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="24" />
+
+    <application>
+        <activity
+            android:name="com.google.zxing.ISBNActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateVisible" />
+
+    </application>
+</manifest>

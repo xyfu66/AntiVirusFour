@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:orientation="vertical">
+        <include layout="@layout/titlebar"/>
+        <LinearLayout
+            style="@style/wrapcontent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon"/>
+            <TextView
+                style="@style/textview16sp"
+                android:layout_marginLeft="15dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/operatorset_string"
+                android:textColor="@color/colorBroom"
+                android:textScaleX="1.1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <TextView
+                style="@style/textview16sp"
+                android:text="运营商选择" />
+            <Spinner
+                android:id="@+id/spinner_operator_select"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                style="@style/spinner_style"
+                android:layout_marginLeft="5dip"
+                android:spinnerMode="dropdown"
+                android:animationCache="true"
+                android:drawSelectorOnTop="true"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+<Button
+    android:id="@+id/btn_operator_finish"
+    android:layout_weight="10"
+    android:layout_width="280dp"
+    android:layout_height="45dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/operator_finish_bg_selector"
+    android:layout_marginBottom="15dp"
+    android:text="确定"/>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

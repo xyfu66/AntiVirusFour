@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="170dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_health_goods_one"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_health_goods_one_describe"
+        android:text="@string/app_name"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="2dp"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxEms="6"
+        android:singleLine="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_health_goods_one_name"
+        android:text="@string/app_name"
+        android:layout_marginTop="6dp"
+        android:textColor="#ff6417"
+        android:textSize="14sp"
+        android:layout_marginStart="3dp"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

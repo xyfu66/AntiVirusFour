@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f0f0">
+
+    <include layout="@layout/titlebar"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_health_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f0f0"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_health"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#2bc0ac"
+                android:gravity="clip_horizontal" >
+
+
+                <!--<android.support.design.widget.CollapsingToolbarLayout-->
+                    <!--android:id="@+id/collapsing_toolbar"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="220dp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:fitsSystemWindows="true"-->
+                    <!--app:contentScrim="?attr/colorPrimary"-->
+                    <!--app:expandedTitleMarginEnd="64dp"-->
+                    <!--app:expandedTitleMarginStart="48dp"-->
+                    <!--app:layout_scrollFlags="scroll|exitUntilCollapsed" />-->
+                <!-- 设置图片-->
+                <!--添加一个定义了app:layout_collapseMode="parallax" 属性的ImageView，出现和消失会有过度-->
+                <ImageView
+                    android:id="@+id/backdrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner_health0"
+                    app:layout_collapseMode="parallax" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <GridView
+                    android:id="@+id/gv_health"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#ffffff"
+                    android:cacheColorHint="#00000000"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="2dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/white"
+                    android:text="为您甄选"/>
+
+                <GridView
+                    android:id="@+id/gv_health_main_goods1"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:cacheColorHint="#00000000"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dp"  >
+                </GridView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/white"
+                    android:text="精品推荐"/>
+
+                <ImageView
+                    android:id="@+id/iv_health_goods_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:background="@drawable/advertising_health_medicine" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

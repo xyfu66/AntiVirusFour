@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_ivon_health"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#ffffff" />
+
+    <TextView
+
+        android:id="@+id/tv_name_health"
+        android:text="高级工具"
+        android:layout_marginTop="3dp"
+        android:textColor="#80000000"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

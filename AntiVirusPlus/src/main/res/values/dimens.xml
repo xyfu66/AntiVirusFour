@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 主界面textview的高度值 -->
+	<dimen name="show_textview_height">28dp</dimen>
+	<!-- 主界面textview的宽度值 -->
+	<dimen name="show_textview_width">38dp</dimen>
+	<!-- 流量标题宽度值 -->
+	<dimen name="liuliang_total_width">150dp</dimen>
+	<!-- 流量标题高度值 -->
+	<dimen name="liuliang_total_height">25dp</dimen>
+	<!-- 流量小标题宽度值 -->
+	<dimen name="liuliang_mintotal_width">120dp</dimen>
+	<!-- 流量小标题高度值 -->
+	<dimen name="liuliang_mintotal_height">25dp</dimen>
+	<!-- 各分项离左边的距离 -->
+	<dimen name="margin_left">30dp</dimen>
+	<!--分割线的高度-->
+	<dimen name="line_height">1dp</dimen>
+	<!--标题文字大小-->
+	<dimen name="total_text_size">20dp</dimen>
+	<!--中部文字大小-->
+	<dimen name="mid_text_size">17dp</dimen>
+	<!--控件间上下的距离-->
+	<dimen name="margin_top_juli">5dp</dimen>
+	<!--时间控件宽度-->
+	<dimen name="date_textview_width">160dp</dimen>
+	<!--时间控件高度-->
+	<dimen name="date_kongjian_height">45dp</dimen>
+	<!--时间控件按钮宽度-->
+	<dimen name="date_button_width">130dp</dimen>
+	<!-- listview条目的高度 -->
+	<dimen name="item_height">50dp</dimen>
+	<!-- listview条目中image的宽度 -->
+	<dimen name="item_image_width">30dp</dimen>
+	<!-- listview条目中textview程序名的宽度 -->
+	<dimen name="item_appname_width">80dp</dimen>
+	<!-- listview条目中数据宽度 -->
+	<dimen name="item_data_width">90dp</dimen>
+
+	<dimen name="fab_margin">16dp</dimen>
+
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+	<dimen name="default_scroll_gradient_height">200dp</dimen>
+
+	<dimen name="title_height">55.0dip</dimen>
+    <dimen name="bottom_icon_size">25dip</dimen>
+    <dimen name="bottom_txt_size">12sp</dimen>
+	<!--found-->
+	<dimen name="item_title_size">20sp</dimen>
+	<dimen name="item_username_size">15sp</dimen>
+	<!--found-->
+    <!--train-->
+    <dimen name="level_head_size">25sp</dimen>
+    <dimen name="level_title_size">30sp</dimen>
+    <dimen name="level_info_size">20sp</dimen>
+    <dimen name="level_padding">15dp</dimen>
+    <dimen name="level_title_margin_left">15dp</dimen>
+    <dimen name="level_title_margin_bottom">5dp</dimen>
+    <dimen name="level_head_margin_left">20dp</dimen>
+    <dimen name="level_head_margin_top">30dp</dimen>
+    <dimen name="level_info_margin_left">20dp</dimen>
+    <dimen name="level_info_margin_top">70dp</dimen>
+    <dimen name="level_title_icon_size">25dp</dimen>
+    <dimen name="level_card_height">200dp</dimen>
+    <!--train-->
+    <dimen name="small_middle_text_size">16.0sp</dimen>
+    <dimen name="top_back_bottom_height">25.0dip</dimen>
+
+    <dimen name="login_comfirm_button_text_size">15.0sp</dimen>
+    <dimen name="login_comfirm_button_margin_top">10.0dip</dimen>
+    <dimen name="login_comfirm_button_margin_bottom">16.0dip</dimen>
+    <dimen name="login_comfirm_button_height">40.0dip</dimen>
+
+</resources>

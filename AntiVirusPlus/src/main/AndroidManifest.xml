@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.jinyun.antivirusfour"
+          xmlns:tools="http://schemas.android.com/tools"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- wifi internet -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取网络数据 -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions"/>
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <!-- sdcard -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEM"/>
+
+    <!-- camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 电话有关权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <!-- 短信有关权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 创建与删除文件 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!--计歩-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/FullScreen">
+        <activity android:name="com.jinyun.antivirusfour.welcomeView.activity_Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PermissionAcitivity"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".DetecterActivity"/>
+        <activity android:name=".MainActivity"/>
+
+        <activity android:name=".welcomeView.activity_Guide"/>
+        <activity android:name=".homeMain.HomeMainActivity"/>
+        <activity android:name=".homeMain.qrCode.WebViewActivity"/>
+
+        <!-- 条形码扫描 -->
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity2"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!--
+				Allow web apps to launch Barcode Scanner by linking to
+				http://zxing.appspot.com/scan.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="zxing.appspot.com"
+                    android:path="/scan"
+                    android:scheme="http" />
+            </intent-filter>
+            <!-- We also support a Google Product Search URL. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.google.com"
+                    android:path="/m/products/scan"
+                    android:scheme="http" />
+            </intent-filter>
+            <!-- And the UK version. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.google.co.uk"
+                    android:path="/m/products/scan"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".antitheft.ContactSelectActivity"/>
+        <activity android:name=".antitheft.LostFindActivity"/>
+        <activity android:name=".antitheft.SetUp1Activity"/>
+        <activity android:name=".antitheft.SetUp2Activity"/>
+        <activity android:name=".antitheft.SetUp3Activity"/>
+        <activity android:name=".antitheft.SetUp4Activity"/>
+
+        <activity android:name=".software.AppManagerActivity"/>
+
+        <activity android:name=".cacheClean.CacheClearListActivity"/>
+        <activity android:name=".cacheClean.CleanCacheActivity"/>
+
+        <activity android:name=".virusScan.VirusScanActivity"/>
+        <activity android:name=".virusScan.VirusScanSpeedActivity"/>
+
+        <activity android:name=".telephoneList.SecurityPhoneActivity"/>
+        <activity android:name=".telephoneList.AddBlackNumberActivity"/>
+        <activity android:name=".telephoneList.ContactSelectActivity"/>
+
+        <activity android:name=".processManager.ProcessManagerActivity"/>
+        <activity android:name=".processManager.ProcessManagerSettingActivity"/>
+
+        <activity android:name=".traffic.OperatorSetActivity"/>
+        <activity android:name=".traffic.TrafficMonitoringActivity"/>
+        <activity android:name=".traffic.AppTrafficActivity"/>
+
+        <activity android:name=".newsReader.NewsActivity"/>
+
+        <activity android:name=".trafficApps.activity.Appsdata" android:label="@string/app_name"/>
+        <activity android:name=".trafficApps.activity.Showmain"/>
+
+        <activity android:name=".emptyFolderCleanup.EmptyMainActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".emptyFolderCleanup.EmptyAboutActivity" android:theme="@style/AppTheme"/>
+
+        <activity android:name=".advanced.SMSBackupActivity"/>
+        <activity android:name=".advanced.SMSReductionActivity"/>
+        <activity android:name=".advanced.AdvancedToolsActivity"/>
+        <activity android:name=".advanced.AppLockActivity"/>
+        <activity android:name=".advanced.EnterPswActivity"/>
+        <activity android:name=".advanced.NumBelongtoMainActivity"/>
+
+        <activity android:name=".setting.SettingsActivity"/>
+
+
+        <activity android:name=".health.LoginHealthActivity"/>
+        <activity android:name=".health.LoginHealthActivity2"/>
+        <activity android:name=".health.LoginHealthActivity3"/>
+        <activity android:name=".health.LoginHealthActivity4"/>
+
+        <activity android:name=".health.PersonalHealthActivity"/>
+        <activity android:name=".health.HealthMainActivity"/>
+        <activity android:name=".health.smartDevices.SmartDevicesActivity"/>
+
+        <activity android:name=".health.cook.activity.GuideActivity"
+            tools:ignore="GoogleAppIndexingWarning"/>
+        <activity android:name=".health.cook.activity.CookDetailsActivity"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="GoogleAppIndexingWarning"/>
+        <activity android:name=".health.cook.activity.MainActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="GoogleAppIndexingWarning"/>
+        <activity android:name=".health.cook.activity.CookListActivity"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="GoogleAppIndexingWarning"/>
+
+        <!--商品详情页 -->
+        <activity android:name=".health.foodsDetailOne.ui.activity.DetailActivity"
+            android:theme="@style/AppThemeGoods"/>
+        <!--课程 -->
+        <activity
+            android:name=".health.lesson.view.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".health.lesson.view.DateCheckActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".health.lesson.view.NewsDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".health.lesson.view.VideoPlayer"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".health.lesson.view.ReleaseNewsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".health.running.activity.MainActivity" android:launchMode="singleTask"/>
+        <activity android:name=".health.running.activity.HistoryActivity"/>
+        <activity android:name=".health.running.activity.SetPlanActivity"/>
+
+
+        <receiver android:name=".antitheft.service.MyDeviceAdminReciever"
+            android:description="@string/step2.1"
+            android:label="@string/step2.1"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample"/>
+            <intent-filter >
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+
+        </receiver>
+
+        <!-- 开机启动广播 -->
+        <receiver android:name=".antitheft.receiver.BootCompleteReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 设备超级管理员广播接收者 -->
+        <receiver
+            android:name=".antitheft.receiver.MyDeviceAdminReciever"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Service -->
+        <service
+            android:name=".antitheft.service.GPSLocationService"
+            android:persistent="true" >
+        </service>
+
+        <!-- 短信拦截的广播接受者的权限为最大 -->
+        <receiver android:name=".telephoneList.reciever.InterceptSmsReciever" >
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephone.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 电话拦截的广播接受者的权限为最大 -->
+        <receiver android:name=".telephoneList.reciever.InterceptCallReciever" >
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 程序锁 -->
+        <service
+            android:name="com.jinyun.antivirusfour.advanced.service.AppLockService"
+            android:persistent="true" >
+        </service>
+
+        <!-- 加人android:persistent="true属性后，就可以保证该应用程序所在进程不会LMK
+        ( LowMemoryKiller,表示最小的LKM 内存阀值，例如系统默认设置为50 MB，当手小于50 MB 时，
+        LMK 机制开始关闭进程)杀死。 -->
+        <service android:name=".processManager.service.AutoKillProcessService"
+            android:persistent="true" />
+
+        <!-- 监控流量的服务 -->
+        <service
+            android:name=".traffic.service.TrafficMonitoringService" android:persistent="true">
+        </service>
+
+        <service
+            android:name=".health.running.step.service.StepService"
+            android:priority="1000">
+            <intent-filter>
+                <!-- 系统启动完成后会调用-->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".health.running.pedometer.StepsDetectService"
+            android:priority="1000"
+            android:process="cn.bluemobi.dylan.step..pedometer.StepsDetectService">
+            <intent-filter>
+                <!-- 系统启动完成后会调用-->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+
+
+        <receiver
+            android:name=".traffic.reciever.BootCompleteReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- App监控流量的服务 -->
+        <receiver android:name="trafficApps.database.MyReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jinyun.antivirusfour.health.filpboard.FlipboardTwoLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jinyun.antivirusfour.health.filpboard.FlipboardTwoView
+        android:id="@+id/objectAnimatorView_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/animateBt_two"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape"
+        android:layout_margin="8dp"
+        android:text="@string/animate"
+        android:textSize="16sp" />
+
+</com.jinyun.antivirusfour.health.filpboard.FlipboardTwoLayout>

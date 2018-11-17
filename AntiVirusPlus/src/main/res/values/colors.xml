@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="palePink">#fdc3ee</color>
+    <color name="colorOrange">#ffbf00</color>
+    <color name="purple">#7637ba</color>
+    <color name="colorBroom">#f4debf7f</color>
+    <color name="white">#ffffff</color>
+    <color name="purpleDark">#6814c4</color>
+    <color name="scienceTechnologyBlue">#0527af</color>
+    <color name="lightBlue">#69a8de</color>
+    <color name="lightBlueBG">#89bae4</color>
+    <color name="grey">#706b6b</color>
+
+    <color name="colorBasicWhite">#ffffff</color>
+    <color name="colorAutoDismissToast">#88000000</color>
+
+    <color name="homeGreen">#2bc0ac</color>
+    <color name="green">#5542f54b</color>
+    <color name="titlebarBG">#21cae3</color>
+
+    <color name="lightText">#01fcfc</color>
+    <color name="blace30">#30000000</color>
+
+    <!-- 背景颜色 -->
+    <color name="main_background">#eeeeee</color>
+    <!-- 标题文字颜色 -->
+    <color name="title_txt_color">#808080</color>
+    <!-- 输入框提示文字颜色 -->
+    <color name="hint_color">#bfbfc1</color>
+    <!-- 按钮颜色 -->
+    <color name="button_background_color">#0093ee</color>
+    <!-- 查询结果标题文字颜色 -->
+    <color name="search_title_color">#4a4a4a</color>
+
+    <color name="black">#000000</color>
+    <color name="gray">#D3D3D3</color>
+
+    <color name="line_color">#e7e7e7</color>
+    <color name="content_background">#f2f2f2</color>
+    <color name="solar_background">#009988</color>
+
+    <color name="bar_color">#232325</color>
+
+    <color name="colorPrimaryLight">#bbdefb</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#727272</color>
+    <color name="iconText">#555555</color>
+    <color name="divider">#B6B6B6</color>
+
+    <!-- foods详情页颜色 -->
+    <color name="colorPrimary_detail">#FF5000</color>
+    <color name="colorPrimaryDark__detail">#AF3600</color>
+    <color name="colorAccent_detail">#1DA1F2</color>
+    <color name="font_black_color">#141414</color>
+    <color name="font_second_color">#666666</color>
+    <color name="font_red_color">#FF686C</color>
+    <color name="font_orange_color">#FF8E00</color>
+    <color name="bg_main_color">#F0F0F0</color>
+    <color name="divider_main_color">#CCC</color>
+    <color name="font_gray_color">#C0C0C0</color>
+
+    <color name="bottom_bg">#ededed</color>
+    <color name="bottom_tab_pressed">#DC4B38</color>
+    <color name="bottom_tab_normal">#B4B4B4</color>
+    <color name="lightgrey">#ffd3d3d3</color>
+    <color name="darkgray">#ffa9a9a9</color>
+    <color name="darkgrey">#ffa9a9a9</color>
+    <color name="lightgray">#ffd3d3d3</color>
+    <color name="red">#ffff0000</color>
+    <color name="brown">#ffa52a2a</color>
+    <color name="font_gray">#ff888888</color>
+    <color name="before_date_check">#EFBE72</color>
+    <color name="crimson">#ffdc143c</color>
+    <color name="aliceblue">#fff0f8ff</color>
+    <color name="salmon">#fffa8072</color>
+    <color name="antiquewhite">#fffaebd7</color>
+    <color name="snow">#fffffafa</color>
+
+    <color name="yellow">#fd9c06</color>
+    <color name="color_one">#FDE4BB</color>
+    <color name="color_two">#FCD2A1</color>
+    <color name="color_three">#EF8273</color>
+    <color name="color_four">#d9ffffff</color>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin">-->
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_health_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f0f0"
+            android:orientation="vertical">
+
+            <include layout="@layout/titlebar"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/health_my_figure" />
+
+            <include layout="@layout/titlebar_health_number"/>
+
+            <com.jinyun.antivirusfour.health.bmiView.BMIView
+                android:id="@+id/bmiView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+            <!--app:verySeverelyUnderweightColor="@color/colorAccent"
+            app:severelyUnderweightColor="@color/colorAccent"
+            app:underweightColor="@color/colorAccent"
+            app:normalColor="@color/colorAccent"
+            app:overweightColor="@color/colorAccent"
+            app:obeseClass1Color="@color/colorAccent"
+            app:obeseClass2Color="@color/colorAccent"
+            app:obeseClass3Color="@color/colorAccent" -->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="5dp"/>
+            <include layout="@layout/titlebar_health_fat"/>
+
+            <com.jinyun.antivirusfour.health.bmiView.FatView
+                android:id="@+id/fatView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:verySeverelyUnderweightColor="@color/palePink"
+                app:severelyUnderweightColor="@color/green"
+                app:underweightColor="@color/green"
+                app:normalColor="@color/green"
+                app:overweightColor="@color/colorOrange"
+                app:obeseClass1Color="@color/colorAccent"
+                app:obeseClass2Color="@color/colorRed"
+                app:obeseClass3Color="@color/colorRed" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:background="@drawable/personal_body_fat_rate" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/health_my_age"/>
+
+            <include layout="@layout/titlebar_health_age"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/health_how_to_eat"/>
+
+            <include layout="@layout/titlebar_health_eat"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:background="@drawable/calories_introduce" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/health_how_to_running"/>
+
+            <include layout="@layout/titlebar_health_running"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="@drawable/health_running_details" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_retry"
+                android:textSize="12sp"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btn_personal_retry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="重新测评"
+                android:textColor="@color/white"
+                android:background="@color/colorRed"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

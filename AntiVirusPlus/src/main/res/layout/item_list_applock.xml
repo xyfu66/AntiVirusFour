@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#10000000"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgv_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/selector_btn_un_applock"
+        />
+
+    <TextView
+        android:id="@+id/tv_appname"
+        style="@style/textview14sp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/imgv_appicon"
+        android:text="第一个TextView"
+        android:textSize="20sp"
+        android:textColor="@color/purple" />
+
+
+    <ImageView
+        android:id="@+id/imgv_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_btn_applock"
+        />
+
+</RelativeLayout>

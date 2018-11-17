@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/lightBlue" >
+
+        <TextView
+            android:id="@+id/tv_scanprocess"
+            style="@style/wrapcontent"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgv_scanningicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/scanning_icon" />
+
+            <TextView
+                android:id="@+id/tv_scansapp"
+                style="@style/textview16sp"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_scanapps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_canclescan"
+            android:layout_width="312dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cancle_scan_btn_selector" />
+    </LinearLayout>
+
+</LinearLayout>

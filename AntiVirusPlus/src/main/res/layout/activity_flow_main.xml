@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/bg02"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+
+	<include layout="@layout/titlebar"/>
+
+	<TextView android:id="@+id/liuliang_biaoti"
+		android:layout_alignParentTop="true" android:layout_width="fill_parent"
+		android:layout_height="@dimen/liuliang_total_height" android:text="@string/now_liuliang_total"
+		android:textSize="@dimen/total_text_size"  android:textColor="@color/lightText"  android:gravity="center"
+		android:layout_centerInParent="true" android:layout_marginTop="60dp" />
+	<TextView android:id="@+id/all_line" android:layout_width="fill_parent"
+		android:layout_height="@dimen/line_height" android:layout_below="@+id/liuliang_biaoti"
+		android:background="#be7cd4" />
+	<TextView android:id="@+id/g_down" android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/all_line" android:text="@string/g_down_total"
+		android:layout_marginLeft="@dimen/margin_left" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/g_down_edit"
+		android:layout_toRightOf="@+id/g_down" android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/liuliang_biaoti" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/g_up" android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/g_down" android:text="@string/g_up_total"
+		android:layout_marginLeft="@dimen/margin_left" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/g_up_edit"
+		android:layout_toRightOf="@+id/g_up" android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/g_down_edit" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/g_total" android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/g_up" android:text="@string/g_total"
+		android:layout_marginLeft="@dimen/margin_left" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/g_total_edit"
+		android:layout_toRightOf="@+id/g_total" android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/g_up_edit" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/total_down" android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/g_total" android:text="@string/down_total"
+		android:layout_marginLeft="@dimen/margin_left" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/total_down_edit"
+		android:layout_toRightOf="@+id/total_down" android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/g_total_edit" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/total_up" android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/total_down" android:text="@string/up_total"
+		android:layout_marginLeft="@dimen/margin_left" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/total_up_edit"
+		android:layout_toRightOf="@+id/total_up" android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/total_down_edit" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/liuliang_total"
+		android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height"
+		android:textColor="@color/lightText"
+		android:layout_below="@+id/total_up" android:text="@string/total_liuliang"
+		android:layout_marginLeft="@dimen/margin_left" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/liuliang_total_edit"
+		android:layout_toRightOf="@+id/liuliang_total" android:layout_width="@dimen/liuliang_mintotal_width"
+		android:layout_height="@dimen/liuliang_mintotal_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/total_up_edit" android:textSize="@dimen/mid_text_size"
+		android:layout_marginTop="@dimen/margin_top_juli" />
+	<TextView android:id="@+id/all_line_mid" android:layout_width="fill_parent"
+		android:layout_height="@dimen/line_height" android:layout_below="@+id/liuliang_total"
+		android:background="#be7cd4" />
+	<TextView android:id="@+id/date_start" android:layout_width="@dimen/date_textview_width"
+		android:layout_height="@dimen/date_kongjian_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/all_line_mid" android:layout_marginTop="@dimen/margin_top_juli"
+		android:gravity="center" android:layout_marginLeft="@dimen/margin_left"
+		android:textSize="@dimen/mid_text_size" />
+	<Button android:id="@+id/date_start_btn" android:layout_height="@dimen/date_kongjian_height"
+		android:layout_width="@dimen/date_button_width"
+		android:layout_toRightOf="@+id/date_start" android:layout_alignTop="@+id/date_start"
+		android:textSize="@dimen/mid_text_size" android:text="@string/date_chose_start"/>
+	<TextView android:id="@+id/date_over" android:layout_width="@dimen/date_textview_width"
+		android:layout_height="@dimen/date_kongjian_height" android:textColor="@color/lightText"
+		android:layout_below="@+id/date_start" android:layout_marginTop="@dimen/margin_top_juli"
+		android:gravity="center" android:layout_marginLeft="@dimen/margin_left"
+		android:textSize="@dimen/mid_text_size" />
+	<Button android:id="@+id/date_over_btn" android:layout_height="@dimen/date_kongjian_height"
+		android:layout_width="@dimen/date_button_width"
+		android:layout_toRightOf="@+id/date_start" android:layout_alignTop="@+id/date_over"
+		android:textSize="@dimen/mid_text_size" android:text="@string/date_chose_over"/>
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/search_button1" android:layout_width="fill_parent"
+		android:layout_below="@+id/date_over">
+
+		<Button android:id="@+id/shownow_button" android:layout_height="@dimen/date_kongjian_height"
+			android:layout_width="wrap_content" android:textSize="@dimen/mid_text_size"
+			android:layout_weight="1" android:text="@string/show_now"/>
+		<Button android:id="@+id/search_button" android:layout_height="@dimen/date_kongjian_height"
+			android:layout_width="wrap_content" android:textSize="@dimen/mid_text_size"
+			android:layout_weight="1" android:text="@string/search_now"/>
+	</LinearLayout>
+	<TextView android:id="@+id/all_line_bottom"
+		android:layout_marginTop="@dimen/margin_top_juli"
+		android:layout_width="fill_parent" android:layout_height="@dimen/line_height"
+		android:layout_below="@+id/search_button1" android:background="#be7cd4" />
+	<Button android:id="@+id/chakan_apps_data"
+		android:layout_height="@dimen/date_kongjian_height"
+		android:layout_marginTop="@dimen/margin_top_juli"
+		android:layout_width="fill_parent" android:layout_below="@+id/all_line_bottom"
+		android:textSize="@dimen/mid_text_size" android:text="@string/every_apps_data" />
+
+</RelativeLayout>

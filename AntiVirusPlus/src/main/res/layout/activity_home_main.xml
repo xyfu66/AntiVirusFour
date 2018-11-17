@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android_custom="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_home02"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#2bc0ac"
+        android:gravity="clip_horizontal" >
+
+        <com.jinyun.antivirusfour.homeMain.view.RoundProgressBar
+            android:id="@+id/roundProgressBar2"
+            android:layout_width="180dip"
+            android:layout_height="180dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#2bc0ac"
+            android_custom:roundColor="@android:color/white"
+            android_custom:roundProgressColor="@color/battery_view_text_light"
+            android_custom:roundWidth="6dip"
+            android_custom:textColor="@android:color/white"
+            android_custom:textSize="25sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="#2bc0ac"
+        android:gravity="center"
+        android:text="上次体检时间:00:00"
+        android:textColor="@color/white" />
+    <RelativeLayout
+        android:id="@+id/re_button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#2bc0ac"
+        android:layout_below="@id/textView1"
+        android:gravity="clip_horizontal" >
+        <Button
+            android:id="@+id/button1"
+            style="@style/logout_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="100dip"
+            android:layout_marginRight="100dip"
+            android:text="一键体检" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#2bc0ac"/>
+    <!-- 九宫格显示功能列表-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/gv_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#e089bae4"
+            android:cacheColorHint="#00000000"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:verticalSpacing="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

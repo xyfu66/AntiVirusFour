@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:2:1-19:12
+	package
+		ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:3:5-46
+		INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml
+		INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:7:5-62
+	android:versionName
+		ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:5:5-30
+		INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml
+		INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:6:5-51
+	xmlns:android
+		ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:4:5-28
+		INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml
+		INJECTED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml
+uses-sdk
+ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:9:5-11:41
+	android:targetSdkVersion
+		ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:11:9-38
+	android:minSdkVersion
+		ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:10:9-35
+application
+ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:13:5-18:19
+activity#com.google.zxing.ISBNActivity
+ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:14:9-16:76
+	android:windowSoftInputMode
+		ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:16:13-73
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\AntiVirusFour\LibZxing\AndroidManifest.xml:15:13-57

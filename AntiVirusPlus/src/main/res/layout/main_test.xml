@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#808080"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar_index"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_feature_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#808080"
+            android:orientation="vertical">
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/guide_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <LinearLayout
+                    android:id="@+id/dotsLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="5px"
+                    android:orientation="horizontal"></LinearLayout>
+            </FrameLayout>
+
+
+            <TableLayout
+                android:id="@+id/tableLayout_travel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:paddingTop="5dip">
+                    <!-- 1 -->
+                    <LinearLayout
+                        android:id="@+id/LinearLayout1"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dip">
+
+
+                        <Button
+                            android:id="@+id/button1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="133dp"
+                            android:background="#FF3366"
+                            android:drawableBottom="@drawable/registered_icon"
+                            android:gravity="top"
+                            android:padding="5dip"
+                            android:text="@string/step1.1"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="125dp"
+                            android:layout_marginTop="10dip"
+                            android:background="#FF6600"
+                            android:drawableBottom="@drawable/face03"
+                            android:gravity="top"
+                            android:padding="5dip"
+                            android:text="@string/step2.1"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="126dp"
+                            android:layout_marginTop="10dip"
+                            android:background="#2e32af"
+                            android:drawableBottom="@drawable/reading_icon"
+                            android:gravity="top"
+                            android:padding="5dip"
+                            android:text="@string/StringNewsReader"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/button5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="10dip"
+                            android:layout_weight="1"
+                            android:background="#009933"
+                            android:drawableBottom="@drawable/shop_girl"
+                            android:gravity="top"
+                            android:padding="5dip"
+                            android:text="@string/more"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+                    <!-- 2 -->
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dip">
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#CC33FF"
+                            android:drawableBottom="@drawable/security_guard_icon"
+                            android:gravity="top"
+                            android:padding="10dip"
+                            android:text="@string/antivirus"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/button8"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="10dip"
+                            android:background="#FFCC00"
+                            android:drawableBottom="@drawable/icon_health"
+                            android:gravity="top"
+                            android:padding="5dip"
+                            android:text="@string/StringHealth"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="10dip"
+                            android:background="#00CCFF"
+                            android:drawableBottom="@drawable/traffic_icon"
+                            android:gravity="top"
+                            android:padding="5dip"
+                            android:text="流量统计"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/button7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:background="#99CC00"
+                            android:drawableBottom="@drawable/home_lastmin"
+                            android:gravity="top"
+                            android:padding="5dip"
+                            android:text="@string/more"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

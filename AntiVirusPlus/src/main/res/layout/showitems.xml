@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<ImageView android:id="@+id/showitum_image"
+		android:layout_width="@dimen/item_image_width" android:layout_height="@dimen/item_height" />
+	<TextView android:id="@+id/showitem_appname"
+		android:layout_width="@dimen/item_appname_width"
+		android:layout_height="@dimen/item_height" android:layout_toRightOf="@+id/showitum_image" />
+	<TextView android:id="@+id/showitem_rxdata"
+		android:layout_width="@dimen/item_data_width" android:layout_height="@dimen/item_height"
+		android:layout_toRightOf="@+id/showitem_appname" />
+	<TextView android:id="@+id/showitem_txdata"
+		android:layout_width="@dimen/item_data_width" android:layout_height="@dimen/item_height"
+		android:layout_toRightOf="@+id/showitem_rxdata" />
+	<TextView android:id="@+id/showitem_totaldata"
+		android:layout_width="@dimen/item_data_width" android:layout_height="@dimen/item_height"
+		android:layout_toRightOf="@+id/showitem_txdata" />
+
+</RelativeLayout>
