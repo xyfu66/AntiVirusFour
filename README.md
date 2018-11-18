@@ -13,11 +13,11 @@
  4. 流量统计功能，阅读新鲜事功能。
 
 
- ![Image1](https://github.com/xyfu66/AntiVirusFour/img/图片1.png)
- ![Image1](https://github.com/xyfu66/AntiVirusFour/img/图片2.png)
- ![Image1](https://github.com/xyfu66/AntiVirusFour/img/图片3.png)
- ![Image1](https://github.com/xyfu66/AntiVirusFour/img/图片4.png)
- ![Image1](https://github.com/xyfu66/AntiVirusFour/img/100.png)
+ ![Image1](http://github.com/xyfu66/AntiVirusFour/img/图片1.png)
+ ![Image1](http://github.com/xyfu66/AntiVirusFour/img/图片2.png)
+ ![Image1](http://github.com/xyfu66/AntiVirusFour/img/图片3.png)
+ ![Image1](http://github.com/xyfu66/AntiVirusFour/img/图片4.png)
+ ![Image1](http://github.com/xyfu66/AntiVirusFour/img/100.png)
 
 
 >工程如何使用？
