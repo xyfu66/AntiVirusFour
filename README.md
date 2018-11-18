@@ -1,9 +1,9 @@
-# ArcFaceDemo
-Free SDK demo
+# 无笔安全
+
 
 >工程如何使用？
  1. 下载代码:    
-    git clone https://github.com/asdfqwrasdf/ArcFaceDemo.git 或者直接下载压缩包
+    git clone https://github.com/xyfu66/AntiVirusFour.git 或者直接下载压缩包
  
  2. 前往[官网](http://www.arcsoft.com.cn/ai/arcface.html)申请appid和sdkkey。    
     修改 ArcFaceDemo-master\src\main\java\com\arcsoft\sdk_demo\FaceDB.java 下面的对应的值:    
