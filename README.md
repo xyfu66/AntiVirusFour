@@ -1,7 +1,8 @@
 # 无笔安全
 
 >项目简介
- 无笔安全是基于Android studio平台下设计的一款管家软件，支持离线提供所有检测服务，包括人脸识别和面部检测，力求手机管理与健康管理为一体，为用户提供更好的服务。
+ 无笔安全是基于Android studio平台下设计的一款管家软件，支持离线提供所有检测服务，包括人脸识别和面部检测，力求手机管理与健康管理为一体，
+为用户提供更好的服务。
 
 >功能划分
  1. 人脸检测的功能分为两个模块，注册人脸和人脸杀毒。
@@ -10,7 +11,7 @@
  4. 流量统计功能，阅读新鲜事功能。
 
 >效果图
-![Image text](https://raw.github.com/xyfu66/repositpry/master/AntiVirusFour/img/1.png)
+![Image text](https://raw.github.com/xyfu66/AntiVirusFour/img/1.png)
 
 
 >工程如何使用？
