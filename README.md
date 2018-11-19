@@ -12,7 +12,7 @@
  3. 无笔健康功能分为六个小模块和一个推荐功能。推荐功能类似某宝，是某商品的介绍页面。六个小模块依次为健康报告，运动健康，健康新闻，智能设备，健康菜谱，课程。
  4. 流量统计功能，阅读新鲜事功能。
 
-![Image1](http://github.com/xyfu66/raw/master/AntiVirusFour/img/100.png)
+![Image1](https://github.com/xyfu66/AntiVirusFour/blob/master/img/100.png)
 
 
 >工程如何使用？
